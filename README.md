@@ -10,7 +10,11 @@
 
 <h2 align="center">É dividindo que se consquista!</h2>
 
-"Aliança Rebelde 2 - A volta dos desafios" é um jogo de estratégia e puzzle narrativo, que se passa depois do jogo "Aliança Rebelde-  Operações Críticas". Nele o jogador assume o papel de um(a) Coordenador(a) de Operações da Aliança Rebelde. Com uma atmosfera inspirada na seriedade e tensão de narrativas como "Andor" e "Rogue One", o jogo desafia o jogador a aplicar os algoritmos de dividir e conquistar para resolver problemas complexos em diversas missões. Cada nível é uma etapa crucial na campanha contra o Império, exigindo lógica e precisão.
+<strong>"Aliança Rebelde 2 - A volta dos desafios"</strong> é um jogo de estratégia e puzzle narrativo, que se passa depois do jogo "Aliança Rebelde-  Operações Críticas". Nele o jogador assume o papel de um(a) Coordenador(a) de Operações da Aliança Rebelde. Com uma atmosfera inspirada na seriedade e tensão de narrativas como "Andor" e "Rogue One", o jogo desafia o jogador a aplicar os algoritmos de dividir e conquistar para resolver problemas complexos em diversas missões. Cada nível é uma etapa crucial na campanha contra o Império, exigindo lógica e precisão.
+
+Cada missão foi pensada para explorar não só os fundamentos dos algoritmos, mas também como eles podem ser aplicados em situações críticas, onde o tempo, a precisão e a estratégia são vitais.
+
+Que a Força esteja com você!
 
 **Número da Lista**: 3
 **Conteúdo da Disciplina**: Dividir e conquistar <br>
