@@ -22,3 +22,12 @@ Cada missão foi pensada para explorar não só os fundamentos dos algoritmos, m
 
 - **Para o Jogador:** Concluir com sucesso todas as missões ao aplicar a estratégia de Dividir e Conquistar para resolver problemas em larga escala, avançando na narrativa e minando as operações complexas do Império.
 - **Educacional:** Proporcionar uma compreensão intuitiva e prática da aplicação e do funcionamento de diferentes algoritmos baseados em Dividir e Conquistar em contextos variados e significativos.
+
+## Missões
+
+### MISSÃO 3: "Duelo no Hiperespaço"
+- **Algoritmo de Dividir e Conquistar**: Par de Pontos Mais Próximos (Closest Pair of Points)
+- **Contexto:** A Aliança interceptou os padrões de formação de uma frota de bloqueio Imperial. Nossos analistas acreditam que seus escudos de energia criam uma "interferência harmônica" se duas naves capitais se aproximam demais, criando uma vulnerabilidade crítica e momentânea em toda a frota.
+- **Descrição:** Você recebe um mapa tático 2D com a posição de todas as naves capitais inimigas. O campo de batalha é muito grande para uma análise de força bruta que alertaria o Império. Sua tarefa é usar a doutrina "Dividir e Conquistar" para encontrar a falha na formação.
+- **Desafio:** Aplicar o método de Dividir e Conquistar de forma interativa: usar as naves como "medianas" para traçar linhas e dividir a frota em sub-problemas menores. Analisar os casos base (grupos com poucas naves) e, por fim, combinar os resultados para encontrar a distância mínima absoluta em toda a frota, revelando o ponto exato para o ataque surpresa da Aliança.
+
