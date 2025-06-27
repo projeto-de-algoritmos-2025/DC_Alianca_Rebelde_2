@@ -26,8 +26,16 @@ Cada missão foi pensada para explorar não só os fundamentos dos algoritmos, m
 ## Missões
 
 ### MISSÃO 3: "Duelo no Hiperespaço"
+
 - **Algoritmo de Dividir e Conquistar**: Par de Pontos Mais Próximos (Closest Pair of Points)
 - **Contexto:** A Aliança interceptou os padrões de formação de uma frota de bloqueio Imperial. Nossos analistas acreditam que seus escudos de energia criam uma "interferência harmônica" se duas naves capitais se aproximam demais, criando uma vulnerabilidade crítica e momentânea em toda a frota.
 - **Descrição:** Você recebe um mapa tático 2D com a posição de todas as naves capitais inimigas. O campo de batalha é muito grande para uma análise de força bruta que alertaria o Império. Sua tarefa é usar a doutrina "Dividir e Conquistar" para encontrar a falha na formação.
 - **Desafio:** Aplicar o método de Dividir e Conquistar de forma interativa: usar as naves como "medianas" para traçar linhas e dividir a frota em sub-problemas menores. Analisar os casos base (grupos com poucas naves) e, por fim, combinar os resultados para encontrar a distância mínima absoluta em toda a frota, revelando o ponto exato para o ataque surpresa da Aliança.
 
+
+### MISSÃO 4: "Quebra de Códigos"
+
+- **Algoritmo de Dividir e Conquistar**: Multiplicação de Karatsuba
+- **Contexto**: Uma transmissão crítica do Alto Comando Imperial foi interceptada, mas ela é protegida por uma chave de sessão dinâmica. Nossos espiões descobriram que a chave é o produto de dois números-semente binários imensos, e ela muda a cada poucos minutos. A multiplicação padrão é lenta demais para nossos droides de análise.
+- **Descrição**: Você recebe os dois números-semente binários. Sua tarefa é guiar o computador de análise da Aliança através dos passos da Multiplicação de Karatsuba.
+- **Desafio**: Dividir corretamente os números binários em metades. Usar os resultados das multiplicações recursivas (calculadas pelo computador) para encontrar o "termo do meio" do algoritmo. Finalmente, combinar os três resultados com os deslocamentos de bits (<<) corretos para montar a chave de decodificação final antes que a transmissão se perca para sempre.
