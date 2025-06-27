@@ -1,4 +1,3 @@
-# missoes_dc/missao_dc_3.py
 import tkinter as tk
 from tkinter import ttk, messagebox, font as tkFont, simpledialog
 import random
@@ -137,6 +136,10 @@ class MissaoDC3:
     def iniciar_missao_contexto(self):
         self._limpar_frame_e_eventos()
         tk.Label(self.base_content_frame, text="MISSÃO 3: Duelo no Hiperespaço", font=self.header_font_obj, fg=self.cor_titulo, bg=self.cor_fundo).pack(pady=(10,15))
+        imagem_missao = self.game_manager.imagens.get("Cena5.png")
+        if imagem_missao:
+            tk.Label(self.base_content_frame, image=imagem_missao, bg=self.cor_fundo).pack(pady=10)
+        
         contexto = ("Fulcrum: \"Comandante, sua missão é analisar o mapa tático da frota e encontrar o par de naves mais próximo. Use a doutrina 'Dividir e Conquistar'. Divida recursivamente a frota, analise os casos base e combine os resultados. Cada decisão é sua.\"")
         tk.Label(self.base_content_frame, text=contexto, wraplength=700, justify=tk.LEFT, font=self.narrative_font_obj, fg=self.cor_texto, bg=self.cor_fundo).pack(pady=10, padx=20)
         ttk.Button(self.base_content_frame, text="Analisar Mapa Tático...", command=self.iniciar_fase_interativa, style="Accent.Dark.TButton").pack(pady=20)

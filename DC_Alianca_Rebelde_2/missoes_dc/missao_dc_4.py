@@ -43,6 +43,10 @@ class MissaoDC4:
     def iniciar_missao_contexto(self):
         self._limpar_frame()
         tk.Label(self.base_content_frame, text="MISSÃO 4: Quebra de Códigos", font=self.header_font_obj, fg=self.cor_texto_titulo_missao, bg=self.cor_fundo_base).pack(pady=(10,15))
+        imagem_missao = self.game_manager.imagens.get("Cena6.png")
+        if imagem_missao:
+            tk.Label(self.base_content_frame, image=imagem_missao, bg=self.cor_fundo_base).pack(pady=10)
+            
         contexto = (
             "Fulcrum: \"Comandante, interceptamos fragmentos de um novo protocolo de criptografia Imperial. A chave de decodificação final é o produto de dois números-semente binários muito grandes. A multiplicação padrão é lenta demais.\n\nSua tarefa é usar a doutrina 'Dividir e Conquistar' para calcular o produto mais rápido, guiando nosso computador de análise passo a passo através da Multiplicação de Karatsuba.\""
         )
