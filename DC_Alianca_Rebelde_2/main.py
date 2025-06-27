@@ -30,7 +30,7 @@ class GameManager:
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
 
         # --- Carregar TODAS as Imagens ---
-        self.imagens = {} # Usaremos um dicionário para organizar as imagens
+        self.imagens = {} # um dicionário para organizar as imagens
         nomes_imagens = [
             "alianca_simbolo.png", "Cena1.png", "Cena2.png", 
             "Cena3.png", "Cena4.png", "Cena5.png", "Cena6.png"
