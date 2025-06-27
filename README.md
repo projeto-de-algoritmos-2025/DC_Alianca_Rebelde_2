@@ -49,7 +49,38 @@ Para ter acesso aos códigos clique em [Aliança Rebelde 2]()
 
 Abaixo estão os screenshots do projeto
 
+### Missão 3 - Par de Pontos Mais Próximos
 
+#### Figura - Missão 3 - 1  
+<img src="https://github.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/blob/main/capturas_telas/missao3_1.png" width="900">
+
+#### Figura - Missão 3 - 2  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao3_2.png" width="900">
+
+#### Figura - Missão 3 - 3  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao3_3.png" width="900">
+
+#### Figura - Missão 3 - 4  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao3_4.png" width="900">
+
+
+### Missão 4 - Karatsuba
+
+
+#### Figura - Missão 4  - 1  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao4_1.png" width="900">
+
+#### Figura - Missão 4 - 2  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao4_2.png" width="900">
+
+#### Figura - Missão 4 - 3  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao4_3.png" width="900">
+
+#### Figura - Missão 3 - 4  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao4_4.png" width="900">
+
+#### Figura - Missão 3 - 5  
+<img src="https://raw.githubusercontent.com/projeto-de-algoritmos-2025/DC_Alianca_Rebelde_2/refs/heads/main/capturas_telas/missao4_5.png" width="900">
 
 ## Instalação 
 
