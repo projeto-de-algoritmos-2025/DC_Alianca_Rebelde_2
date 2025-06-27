@@ -6,10 +6,10 @@ import os
 import sys
 
 # --- Importações das missões ---
-#try:
-#     from missoes_dc.missao_dc_3 import MissaoDC3
-#except ImportError as e:    
-#    print(f"ALERTA DE IMPORTAÇÃO DE MÓDULO: {e}")
+try:
+     from missoes_dc.missao_dc_3 import MissaoDC3
+except ImportError as e:    
+    print(f"ALERTA DE IMPORTAÇÃO DE MÓDULO: {e}")
 
 class GameManager:
     def __init__(self, root_tk):
@@ -128,8 +128,12 @@ class GameManager:
         elif self.game_state == "MISSION_DC_2_SUCCESS":
             self._display_text_screen("Operação Concluída", ["Fulcrum: \"Excelente. Prepare-se para o próximo desafio.\""], "Avançar para Missão 3", "START_MISSION_DC_3", button_style="Accent.Dark.TButton", image_to_display=self.alianca_simbolo_photo)
         elif self.game_state == "START_MISSION_DC_3":
-            narrativa = ["Missão 3: Duelo no Hiperespaço (Par de Pontos Mais Próximos)", "\n(Esta missão ainda está em desenvolvimento.)"]
-            self._display_text_screen("MISSÃO 3 EM DESENVOLVIMENTO", narrativa, "Avançar para a Próxima Missão", "MISSION_DC_3_SUCCESS")
+            if 'MissaoDC3' in globals():
+                self._clear_content_frame()
+                self.current_mission_obj = MissaoDC3(self.root, self, self.content_frame)
+                self.current_mission_obj.iniciar_missao_contexto()
+            else:
+                messagebox.showerror("Erro Crítico", "Classe MissaoDC3 não foi carregada.")
         elif self.game_state == "MISSION_DC_3_SUCCESS":
              dialogo = ["Fulcrum: \"Mais um sucesso para a Aliança. Continue assim.\""]
              self._display_text_screen("Operação Concluída", dialogo, "Avançar para Missão 4", "START_MISSION_DC_4", button_style="Accent.Dark.TButton", image_to_display=self.alianca_simbolo_photo)
