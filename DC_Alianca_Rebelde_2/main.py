@@ -7,8 +7,8 @@ import sys
 
 # --- Importações das missões (Comente/descomente conforme desenvolve) ---
 try:
-    # from missoes_dc.missao_dc_1 import MissaoDC1
-    # from missoes_dc.missao_dc_2 import MissaoDC2 
+    from missoes_dc.missao_dc_1 import MissaoDC1
+    from missoes_dc.missao_dc_2 import MissaoDC2 
     from missoes_dc.missao_dc_3 import MissaoDC3
     from missoes_dc.missao_dc_4 import MissaoDC4
 except ImportError as e:    
@@ -135,14 +135,20 @@ class GameManager:
         
         # --- FLUXO DAS NOVAS MISSÕES ---
         elif self.game_state == "START_MISSION_DC_1":
-            narrativa = ["Missão 1: O Enigma da Mediana (Mediana das Medianas)", "\n(Esta missão ainda está em desenvolvimento.)"]
-            self._display_text_screen("MISSÃO 1 EM DESENVOLVIMENTO", narrativa, "Avançar para a Próxima Missão", "MISSION_DC_1_SUCCESS")
+            if 'MissaoDC1' in globals():
+                self._clear_content_frame()
+                self.current_mission_obj = MissaoDC1(self.root, self, self.content_frame)
+                self.current_mission_obj.iniciar_missao_contexto()
+            else: messagebox.showerror("Erro Crítico", "Classe MissaoDC1 não foi carregada.")
         elif self.game_state == "MISSION_DC_1_SUCCESS":
             dialogo = ["Fulcrum: \"Análise impressionante, Comandante. Você encontrou o ponto nevrálgico nos dados imperiais. Isso nos leva diretamente à nossa próxima operação...\""]
             self._display_text_screen("Análise Concluída", dialogo, "Aguardando ordens.", "START_MISSION_DC_2", button_style="Accent.Dark.TButton", image_to_display=self.imagens.get("alianca_simbolo.png"))
         elif self.game_state == "START_MISSION_DC_2":
-            narrativa = ["Missão 2: Dicas do Mestre (Contagem de Inversões)", "\n(Esta missão ainda está em desenvolvimento.)"]
-            self._display_text_screen("MISSÃO 2 EM DESENVOLVIMENTO", narrativa, "Avançar para a Próxima Missão", "MISSION_DC_2_SUCCESS")
+            if 'MissaoDC2' in globals():
+                self._clear_content_frame()
+                self.current_mission_obj = MissaoDC2(self.root, self, self.content_frame)
+                self.current_mission_obj.iniciar_missao_contexto()
+            else: messagebox.showerror("Erro Crítico", "Classe MissaoDC2 não foi carregada.")
         elif self.game_state == "MISSION_DC_2_SUCCESS":
             self._display_text_screen("Operação Concluída", ["Fulcrum: \"Excelente. Prepare-se para o próximo desafio.\""], "Avançar para Missão 3", "START_MISSION_DC_3", button_style="Accent.Dark.TButton", image_to_display=self.imagens.get("alianca_simbolo.png"))
         elif self.game_state == "START_MISSION_DC_3":
