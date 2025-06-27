@@ -1,4 +1,3 @@
-# main.py (Versão 2.2 - Textos Completos Restaurados)
 import tkinter as tk
 from tkinter import ttk, messagebox, font as tkFont, PhotoImage
 import random 
@@ -7,7 +6,8 @@ import sys
 
 # --- Importações das missões ---
 try:
-     from missoes_dc.missao_dc_3 import MissaoDC3
+    from missoes_dc.missao_dc_3 import MissaoDC3
+    from missoes_dc.missao_dc_4 import MissaoDC4
 except ImportError as e:    
     print(f"ALERTA DE IMPORTAÇÃO DE MÓDULO: {e}")
 
@@ -137,9 +137,20 @@ class GameManager:
         elif self.game_state == "MISSION_DC_3_SUCCESS":
              dialogo = ["Fulcrum: \"Mais um sucesso para a Aliança. Continue assim.\""]
              self._display_text_screen("Operação Concluída", dialogo, "Avançar para Missão 4", "START_MISSION_DC_4", button_style="Accent.Dark.TButton", image_to_display=self.alianca_simbolo_photo)
+        # Novo bloco no update_display
+
         elif self.game_state == "START_MISSION_DC_4":
-            narrativa = ["Missão 4", "\n(Esta missão ainda está em desenvolvimento.)"]
-            self._display_text_screen("MISSÃO 4 EM DESENVOLVIMENTO", narrativa, "Avançar para a Próxima Missão", "MISSION_DC_4_SUCCESS")
+            # Verifica se a classe foi importada antes de usá-la
+            if 'MissaoDC4' in globals():
+                self._clear_content_frame() # Limpa a tela para a missão desenhar
+                self.current_mission_obj = MissaoDC4(self.root, self, self.content_frame)
+                self.current_mission_obj.iniciar_missao_contexto()
+            else:
+                messagebox.showerror("Erro Crítico", "Classe MissaoDC4 não foi carregada. Descomente a importação no topo do main.py")
+
+        elif self.game_state == "MISSION_DC_4_SUCCESS":
+             dialogo = ["Fulcrum: \"Inteligência valiosa, Comandante. O Império não saberá o que os atingiu. Sua habilidade com criptografia é um trunfo para a Aliança.\""]
+             self._display_text_screen("Transmissão Decodificada", dialogo, "Avançar para a Próxima Missão", "START_MISSION_DC_5", button_style="Accent.Dark.TButton", image_to_display=self.alianca_simbolo_photo)
         elif self.game_state == "MISSION_DC_4_SUCCESS":
             dialogo = ["Fulcrum: \"Seu progresso é notável, Comandante.\""]
             self._display_text_screen("Operação Concluída", dialogo, "Avançar para Missão 5", "START_MISSION_DC_5", button_style="Accent.Dark.TButton", image_to_display=self.alianca_simbolo_photo)

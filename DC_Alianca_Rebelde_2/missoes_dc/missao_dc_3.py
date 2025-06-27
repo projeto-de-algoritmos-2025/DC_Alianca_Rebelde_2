@@ -12,10 +12,7 @@ def dist(p1, p2):
 
 # Função auxiliar para o algoritmo, pode ser movida para um arquivo separado
 def encontrar_par_mais_proximo(pontos):
-    """
-    Encontra o par de pontos mais próximo em uma lista de pontos.
-    Wrapper para o algoritmo de dividir e conquistar.
-    """
+
     if len(pontos) < 2:
         return float('inf'), (None, None)
     
@@ -565,16 +562,8 @@ class MissaoDC3:
             messagebox.showerror("Falha na Análise", f"Comandante, o par que você reportou ({par_jogador_nomes[0]}-{par_jogador_nomes[1]}) tem distância {dist_jogador:.2f}, mas a vulnerabilidade real era de {self.solucao_otima_dist:.2f} entre as naves {par_otimo_nomes[0]}-{par_otimo_nomes[1]}.\nPerdemos a janela de oportunidade.", parent=self.base_content_frame)
             self.game_manager.mission_failed_options(self, "Falha na análise da frota.", "Fulcrum: \"A precisão é tudo nestas operações. Tente novamente.\"")
 
+
+
     def retry_mission(self):
-        # Reinicia o estado da missão antes de começar
-        self.todas_naves = [] 
-        self.linhas_de_divisao = [] 
-        self.log_acoes = []
-        self.quadros_de_analise = []
-        self.contador_operacoes = 0
-        self.menor_distancia_global = float('inf')
-        self.melhor_par_global = (None, None)
-        self._resetar_estados_de_selecao()
-        self.nave_medicao_1 = self.nave_medicao_2 = None
-        self.resultados_combinacao = []
-        self.iniciar_fase_interativa()
+        print("MissaoDC3: retry_mission chamada.")
+        self.game_manager.set_game_state("START_MISSION_DC_3")
