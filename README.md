@@ -40,7 +40,7 @@ Para mais detalhes sobre a história, os personagens, os algoritmos abordados e 
 - Missão 5: Ataque Coordenado em Coruscant - Multiplicação de Matrizes com Strassen   
 
 
-Para ter acesso aos códigos clique em [Aliança Rebelde 2]()
+Para ter acesso aos códigos dos algoritmos clique em [Aliança Rebelde 2](DC_Alianca_Rebelde_2/algoritmos_dc)
 
 ## Link do vídeo
 
@@ -54,10 +54,10 @@ Abaixo estão os screenshots do projeto
 #### Figura - Missão 1 - 1 
 ![image](https://github.com/user-attachments/assets/644aa38d-6b4c-49ca-8882-652951160b73)
 #### Figura - Missão 1 - 2
-![image](https://github.com/user-attachments/assets/ee3e0059-9874-4c41-bb27-16cc02cc965a)
+![image](https://github.com/user-attachments/assets/20db0380-51eb-4bb6-b09b-cfe227fbf321)
 
 #### Figura - Missão 1 - 3
-![image](https://github.com/user-attachments/assets/20db0380-51eb-4bb6-b09b-cfe227fbf321)
+![image](https://github.com/user-attachments/assets/ee3e0059-9874-4c41-bb27-16cc02cc965a)
 
 ### Missão 2 - Dicas do Mestre (Contagem de inversões)
 #### Figura - Missão 2 - 1 
