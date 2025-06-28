@@ -44,10 +44,29 @@ Para ter acesso aos códigos clique em [Aliança Rebelde 2]()
 
 ## Link do vídeo
 
+Acesse ao vídeo [aqui](https://youtu.be/GvIUnEwvKSg)
 
 ## Screenshots
 
 Abaixo estão os screenshots do projeto
+
+### Missão 1 - O Enigma da Mediana (Mediana das medianas)
+#### Figura - Missão 1 - 1 
+![image](https://github.com/user-attachments/assets/644aa38d-6b4c-49ca-8882-652951160b73)
+#### Figura - Missão 1 - 2
+![image](https://github.com/user-attachments/assets/ee3e0059-9874-4c41-bb27-16cc02cc965a)
+
+#### Figura - Missão 1 - 3
+![image](https://github.com/user-attachments/assets/20db0380-51eb-4bb6-b09b-cfe227fbf321)
+
+### Missão 2 - Dicas do Mestre (Contagem de inversões)
+#### Figura - Missão 2 - 1 
+![image](https://github.com/user-attachments/assets/b68b0199-c85c-441f-9e9e-0082791a054d)
+
+#### Figura - Missão 2 - 2
+![image](https://github.com/user-attachments/assets/8670b92e-dbf3-4720-8c8e-ab4d32dc3dd4)
+
+
 
 ### Missão 3 - Par de Pontos Mais Próximos
 
@@ -86,7 +105,7 @@ Abaixo estão os screenshots do projeto
 
 ### Para mais detalhes:
 
-Para mais detalhes e passo a passo da execução, acesse a documentação em [Aliança Rebelde 2](INCLUIR LINK)
+Para mais detalhes e passo a passo da execução, acesse a documentação em [Aliança Rebelde 2](/DC_Alianca_Rebelde_2/DC_Alianca_Rebelde_2)
 
 #### 1. Pré-requisitos
 
@@ -163,7 +182,6 @@ Para que o jogo funcione corretamente, especialmente o carregamento de imagens e
       │   ├── missao2.py
       │   ├── missao3.py
       │   ├── missao4.py
-      │   ├── missao5.py
       │   
       ├── assets/                     # Pasta para recursos gráficos e sonoros
       │   └── images/
